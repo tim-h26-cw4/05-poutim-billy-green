@@ -10,7 +10,7 @@ export default class Chef {
   }
 
   init() {
-    const instance = new Poutine();
+    const instance = new Poutine(this.element);
     this.menu.push(instance);
     const button = this.element.querySelector('.js-button');
     console.log(button);
